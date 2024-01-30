@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "target": "es2021",
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "types": [
+            "node",
+            "@wdio/globals/types",
+            "expect-webdriverio",
+            "@wdio/mocha-framework",
+            "@wdio/browserstack-service",
+            "@percy/webdriverio",
+            "wdio-intercept-service"
+        ]
+    },
+    "include": ["./tests/**/**/*.ts", "./tests/**/pages/*.ts", "./config/apps/*/*.ts", "./utils/**/*.ts", "./components/**/*.ts"],
+    "exclude": ["./node_modules", "./tests/vops/**/**/*.ts", "./config/**/**/*.ts", "./tests/bta/**/*.ts", "./tests/trippreserver_claims/excel/*.ts"]
+}
